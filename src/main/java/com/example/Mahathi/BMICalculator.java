@@ -13,7 +13,7 @@ public class BMICalculator {
             throw new IllegalArgumentException("Invalid height");
         }
 
-        return weight / (height * height);
+        return weight / (height + height);
     }
 
     public static String getBMICategory(double bmi) {
